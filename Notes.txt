@@ -1,0 +1,68 @@
+In the 'Stats.jsx' file, just adding a prop of 'lg', for example, will cause the prop in the received component to be true.
+
+For example,
+
+    function StatCard(props) {
+
+        const { lg, title, children } = props;
+        
+        return (
+            <div className={"card stat-card " + (lg ? 'col-span-2' : '')}></div>
+        );
+    }
+
+    <StatCard lg/>  <-- The 'col-span-2' class will be added
+    <StatCard />    <-- The 'col-span-2' class will NOT be added
+
+____________________________________________________________
+
+NoSQL database is used by utilizing Firebase's firestore database service.
+
+____________________________________________________________
+
+The Firebase Firestore database has collections which are like 'tables'.
+
+Meanwhile, within a collection, there is a document that is the associated key with a paired-value in the form of an object.
+
+Note that there can be nested collections within documents.
+
+____________________________________________________________
+
+The users' coffee entry will be saved/stored under a corresponding unique document that is identified by a unique ID.
+
+____________________________________________________________
+
+Extra rules are applied for the Firestore database.
+
+____________________________________________________________
+
+DUMMY ACCOUNT
+-------------
+
+Email: doe@gmail.com
+
+Password: password123
+
+____________________________________________________________
+
+The value passed to the switch statement is true, so that the validation is always performed regardless the value of the states being checked
+
+____________________________________________________________
+
+In 'App.jsx' file, the double exclamation marks, '!!', forces a truthy or falsy value to a boolean value.
+
+____________________________________________________________
+
+*** Abandoned since all the packages here have NOT been updated since React 18 ***
+
+Installed 'React Toggle' package for setting up dark-mode button.
+
+    npm install react-toggle --save
+
+The detail guide on how to implement this dark mode button was seen here.
+
+    https://blog.logrocket.com/dark-mode-react-in-depth-guide/
+
+Also installed 'React Responsive' package for added responsive design features.
+
+Another install of 'React Persisted State' package to persist states across to local storage for darkmode.
